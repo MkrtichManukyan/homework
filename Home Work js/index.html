@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+</head>
+<body>
+    
+    <script>
+    // Tnayin 1
+    const products = [
+        {title: 'Product 1', price: 200},
+        {title: 'Product 2', price: 100},
+        {title: 'Product 3', price: 300},
+        {title: 'Product 4', price: 222},
+    ];  
+    
+    function sum(c){
+        const total = c.reduce((accum, item, index, products) => {
+                return accum + item.price
+            }, 0
+        );
+        return total
+    }
+    let s = sum(products)
+    // console.log(s);
+
+    //Tnain2
+    // Վերցնենք 2 զանգված(ոչ օբյեկտ), spread -ով միավորենք
+
+    let user = [
+        'John',
+        28,
+    ]
+
+    let info = [
+        'Yerevan',
+        'Some'
+    ]
+
+    let person = [
+        ...user,
+        ...info
+    ]
+
+    // console.log(person);
+    
+
+    </script>
+</body>
+</html>
