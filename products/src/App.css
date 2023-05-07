@@ -1,0 +1,7 @@
+.flex button{
+    background-color: rgb(36, 129, 36);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;
+}
